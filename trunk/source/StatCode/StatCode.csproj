@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="img\icon\Star_R.png" />
+    <None Remove="img\icon\Star_W.png" />
+    <None Remove="img\pp\User1.png" />
+    <None Remove="logo.ico" />
+    <None Remove="logo.png" />
+    <None Remove="logo_R.png" />
+    <None Remove="logo_W.png" />
+    <None Remove="User1.png" />
+    <None Remove="User2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ClasseManager\ClasseManager.csproj" />
+    <ProjectReference Include="..\Data\Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="img\icon\Star_R.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\icon\Star_W.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\pp\User1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="logo.ico" />
+    <Resource Include="logo.png" />
+    <Resource Include="logo_R.png" />
+    <Resource Include="logo_W.png" />
+    <Resource Include="User1.png" />
+    <Resource Include="User2.png" />
+  </ItemGroup>
+
+</Project>
